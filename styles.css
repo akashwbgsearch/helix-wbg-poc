@@ -75,3 +75,7 @@ main .columns .embed-wistia {
         margin-left: 16px;
     }
 }
+main img {
+  max-width: 100%;
+  height: auto;
+}
