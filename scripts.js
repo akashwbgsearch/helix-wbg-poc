@@ -11,6 +11,37 @@
  */
 
 /**
+ * Turns absolute links within the domain into relative links.
+ * @param {Element} main The container element
+ */
+export function makeLinksRelative(main) {
+  main.querySelectorAll('a').forEach((a) => {
+    // eslint-disable-next-line no-use-before-define
+    const hosts = ['hlx3.page', 'hlx.page', 'hlx.live', ...PRODUCTION_DOMAINS];
+    if (a.href) {
+      try {
+        const url = new URL(a.href);
+        const relative = hosts.some((host) => url.hostname.includes(host));
+        if (relative) {
+          let { pathname } = url;
+
+          if (pathname.includes('/stories/')) pathname = pathname.replace('/stories/', '/news/');
+          if (pathname.includes('/2015/')) pathname = pathname.replace('/2015/', '/');
+          if (pathname.includes('/2016/')) pathname = pathname.replace('/2016/', '/');
+          if (pathname.startsWith('/content/journey/nz/en')) pathname = pathname.replace('/content/journey/nz/en', '');
+          if (pathname.endsWith('.html')) pathname = pathname.replace('.html', '');
+
+          a.href = `${pathname}${url.search}${url.hash}`;
+        }
+      } catch (e) {
+        // something went wrong
+        // eslint-disable-next-line no-console
+        console.log(e);
+      }
+    }
+  });
+}
+/**
  * log RUM if part of the sample.
  * @param {string} checkpoint identifies the checkpoint in funnel
  * @param {Object} data additional data for RUM sample
