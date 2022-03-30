@@ -1,4 +1,4 @@
-import { makeLinksRelative } from '../../scripts/scripts.js';
+import { makeLinksRelative } from '../scripts/scripts.js';
 
 /**
  * collapses all open nav sections
