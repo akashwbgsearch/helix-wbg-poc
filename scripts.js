@@ -455,7 +455,7 @@
     // eslint-disable-next-line no-use-before-define
     await loadEager(doc);
     // eslint-disable-next-line no-use-before-define
-    //await loadLazy(doc);
+    await loadLazy(doc);
     // eslint-disable-next-line no-use-before-define
    // loadDelayed(doc);
   }
@@ -622,7 +622,7 @@
     await loadBlocks(main);
   
     loadHeader(doc.querySelector('header'));
-    loadFooter(doc.querySelector('footer'));
+    // loadFooter(doc.querySelector('footer'));
   
     loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
     addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.ico`);
