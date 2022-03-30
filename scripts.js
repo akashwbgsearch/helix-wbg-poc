@@ -290,7 +290,7 @@
         const decorationComplete = new Promise((resolve) => {
           (async () => {
             try {
-              const mod = await import(`../blocks/${blockName}/${blockName}.js`);
+              const mod = await import(`./blocks/${blockName}/${blockName}.js`);
               if (mod.default) {
                 await mod.default(block, blockName, document, eager);
               }
