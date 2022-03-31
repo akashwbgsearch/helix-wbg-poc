@@ -596,6 +596,17 @@ async function loadEager(doc) {
     target.before(wrapper);
   })
 
+  var columns = document.querySelectorAll('.columns')
+  columns.forEach((column) => {
+    var wrapper = document.createElement('div');
+    wrapper.className = "full-row-white-components";
+    var container = document.createElement('div');
+    container.className = "conatiner";
+    wrapper.appendChild(container).appendChild(column);
+    var target = document.querySelectorAll('.primary-subnav-items')[0];
+    target.after(wrapper);
+  })
+
   // const theme = getMetadata('theme');
   // if (theme) document.body.classList.add(toClassName(theme));
 
