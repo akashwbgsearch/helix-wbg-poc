@@ -601,9 +601,9 @@ async function loadEager(doc) {
   var heroImg = document.querySelectorAll('.hero-img')[0];
   var heroContainer = document.querySelectorAll('.hero-container')[0];
   var parent1 = document.createElement('div');
-  parent1.classList.add("hero-v1-section swiper-slide");
+  parent1.classList.add("hero-v1-section", "swiper-slide");
   var parent2 = document.createElement('div');
-  parent2.classList.add("hero-container-fixed swiper-container swiper-container-horizontal swiper-container-coverflow swiper-container-3d");
+  parent2.classList.add("hero-container-fixed", "swiper-container", "swiper-container-horizontal", "swiper-container-coverflow", "swiper-container-3d");
   parent2.appendChild(parent1).append(heroImg, heroContainer);
   var target = document.querySelectorAll('.logo-wrapper')[0];
   target.after(parent2);
