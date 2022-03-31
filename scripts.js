@@ -600,6 +600,7 @@ async function loadEager(doc) {
 
   var heroImg = document.querySelectorAll('.hero-img')[0];
   var heroContainer = document.querySelectorAll('.hero-container')[0];
+  heroContainer.classList.add("container");
   var parent1 = document.createElement('div');
   parent1.classList.add("hero-v1-section", "swiper-slide");
   var parent2 = document.createElement('div');
