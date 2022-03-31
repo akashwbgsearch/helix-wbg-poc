@@ -590,8 +590,10 @@ async function loadEager(doc) {
   var logos = document.querySelectorAll('.logo')
   logos.forEach((logo) => {
     var wrapper = document.createElement('div');
-    wrapper.className = "container";
-    wrapper.appendChild(logo);
+    wrapper.className = "logo-wrapper";
+    var container = document.createElement('div');
+    container.className = "container";
+    wrapper.appendChild(container).appendChild(logo);
     var target = document.querySelectorAll('.primary-subnav-items')[0];
     target.before(wrapper);
   })
