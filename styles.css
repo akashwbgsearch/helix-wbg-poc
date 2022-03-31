@@ -82,3 +82,7 @@ main .columns img {
   height: 148px;
   width: 263px;
 }
+
+.title {
+  padding-top: 64px; 
+}
