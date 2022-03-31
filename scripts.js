@@ -592,6 +592,8 @@ async function loadEager(doc) {
     var wrapper = document.createElement('div');
     wrapper.className = "container";
     wrapper.appendChild(logo);
+    var target = document.querySelectorAll('.primary-subnav-items')[0];
+    target.before(wrapper);
   })
 
   // const theme = getMetadata('theme');
