@@ -598,6 +598,16 @@ async function loadEager(doc) {
     target.before(wrapper);
   })
 
+  var heroImg = document.querySelectorAll('.hero-img')[0];
+  var heroContainer = document.querySelectorAll('.hero-container')[0];
+  var parent1 = document.createElement('div');
+  parent1.classList.add("hero-v1-section").add("swiper-slide");
+  var parent2 = document.createElement('div');
+  parent2.classList.add(["hero-container-fixed", "swiper-container", "swiper-container-horizontal", "swiper-container-coverflow", "swiper-container-3d"]);
+  parent2.appendChild(parent1).append(heroImg, heroContainer);
+  var target = document.querySelectorAll('.logo-wrapper')[0];
+  target.after(parent2);
+
   var columns = document.querySelectorAll('.columns')
   columns.forEach((column) => {
     var wrapper = document.createElement('div');
