@@ -86,3 +86,7 @@ main .columns img {
 .title {
   padding-top: 64px; 
 }
+
+.navigation {
+    background-color: #0071BC;
+}
