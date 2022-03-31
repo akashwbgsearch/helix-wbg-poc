@@ -60,11 +60,12 @@ main .columns .embed-wistia {
 }
 
 @media (min-width: 900px) {
-    main .columns > div, main .columns > div:nth-child(even) {
+    main .columns > div,
+    main .columns > div:nth-child(even) {
         flex-direction: unset;
     }
 
-   /* main .columns > div > div {
+    /* main .columns > div > div {
         width: 50%;
     }*/
 
@@ -77,16 +78,24 @@ main .columns .embed-wistia {
     }
 }
 main .columns img {
-  /*max-width: 100%;*/
-  /*height: auto;*/
-  height: 148px;
-  width: 263px;
+    /*max-width: 100%;*/
+    /*height: auto;*/
+    height: 148px;
+    width: 263px;
 }
 
 .title {
-  padding-top: 64px; 
+    padding-top: 64px;
 }
 
 .primary-subnav-items {
-    background-color: #0071BC;
+    background-color: #0071bc;
+}
+
+.hero-img {
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
