@@ -99,3 +99,31 @@ main .columns img {
     background-position: center center;
     background-size: cover;
 }
+
+.hero-container h1 {
+    font-family: "Andes", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0px 0px 16px 0px;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.hero-container>div {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    display: block;
+}
+.hero-container p {
+    font-family: "Andes", sans-serif;
+    color: #ffffff;
+    margin: 0px 0px 16px 0px;
+    font-size: 24px;
+    line-height: 30px;
+}
