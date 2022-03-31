@@ -587,7 +587,7 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   const main = doc.querySelector('main');
 
-  var logos = document.getElementsByClassName('logo');
+  var logos = document.querySelectorAll('.logo')
   logos.forEach((logo) => {
     var wrapper = document.createElement('div');
     wrapper.className = "container";
