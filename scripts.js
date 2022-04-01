@@ -613,15 +613,17 @@ async function loadEager(doc) {
 
   var columns = document.querySelectorAll('.columns')[0];
   var column2 = document.querySelectorAll('.column-2')[0];
-  // columns.forEach((column) => {
-    var wrapper = document.createElement('div');
-    wrapper.className = "full-row-white-components";
-    var container = document.createElement('div');
-    container.className = "container";
-    wrapper.appendChild(container).append(columns, column2);
-    var datatarget = document.querySelectorAll('.primary-subnav-items')[0];
-    datatarget.after(wrapper);
-  // })
+  var wrapper = document.createElement('div');
+  wrapper.className = "full-row-white-components";
+  var container = document.createElement('div');
+  container.className = "container";
+  wrapper.appendChild(container).append(columns, column2);
+  var datatarget = document.querySelectorAll('.primary-subnav-items')[0];
+  datatarget.after(wrapper);
+
+  var navContainer = document.querySelectorAll('.primary-subnav-items>div')[0];
+  navContainer.className = "container";
+
 
   // const theme = getMetadata('theme');
   // if (theme) document.body.classList.add(toClassName(theme));
