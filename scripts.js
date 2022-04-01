@@ -627,7 +627,8 @@ async function loadEager(doc) {
   let newsletter = document.createElement('div');
   newsletter.classList.add("validate", "input-group", "mySignUpFormDesktop");
   const form = document.createElement('form');
-  document.querySelectorAll('.column-1')[0].append(newsletter).append(form);
+  newsletter.append(form);
+  document.querySelectorAll('.column-1')[0].append(newsletter);
   let inputText = document.createElement('input');
   inputText.type = "text";
   inputText.id = "fields_email";
