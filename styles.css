@@ -121,3 +121,6 @@ main .column-1 img {
     border-left: 1px solid #e5e5e5;
     padding-left: 32px;
 }
+.column-2 img {
+    width: 100%;
+}
