@@ -117,6 +117,9 @@ main .column-1 img {
     max-width: 67%;
     padding-right: 32px;
 }
+.column-2 {
+    max-width: 33%;
+}
 .column-2 > div {
     border-left: 1px solid #e5e5e5;
     padding-left: 32px;
