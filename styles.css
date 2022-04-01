@@ -20,11 +20,11 @@
   padding-right: 8px;
 }*/
 
-main .section > div.columns-wrapper {
+/* main .section > div.columns-wrapper {
     max-width: 1200px;
-}
+} */
 
-main .columns > div {
+main .column-1 > div {
     display: flex;
     flex-direction: column;
     /*padding: 24px 0;*/
@@ -32,36 +32,18 @@ main .columns > div {
     /*align-items: center;*/
 }
 
-main .columns > div:nth-child(even) {
+main .column-1 > div:nth-child(even) {
     display: flex;
     flex-direction: column-reverse;
 }
 
-main .columns .form-container {
-    background-color: white;
-    color: black;
-    padding: 32px;
-    max-width: 456px;
-    box-shadow: 0px 1px 6px rgb(34 34 34 / 10%);
-}
-
-main .columns .form-container h3 {
-    font-size: 32px;
-    font-weight: normal;
-}
-
-main .columns p {
+main .column-1 p {
     font-size: 16px;
 }
 
-main .columns .embed-wistia {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-}
-
 @media (min-width: 900px) {
-    main .columns > div,
-    main .columns > div:nth-child(even) {
+    main .column-1 > div,
+    main .column-1 > div:nth-child(even) {
         flex-direction: unset;
     }
 
@@ -69,15 +51,15 @@ main .columns .embed-wistia {
         width: 50%;
     }*/
 
-    main .columns > div > div:first-child {
+    main .column-1 > div > div:first-child {
         margin-right: 16px;
     }
 
-    main .columns > div > div:last-child {
+    main .column-1 > div > div:last-child {
         margin-left: 16px;
     }
 }
-main .columns img {
+main .column-1 img {
     /*max-width: 100%;*/
     /*height: auto;*/
     height: 148px;
@@ -110,7 +92,7 @@ main .columns img {
     line-height: 44px;
 }
 
-.hero-container>div {
+.hero-container > div {
     position: absolute;
     bottom: 10%;
     text-align: center;
@@ -126,4 +108,11 @@ main .columns img {
     margin: 0px 0px 16px 0px;
     font-size: 24px;
     line-height: 30px;
+}
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column-1 {
+    max-width: 67%;
 }

@@ -616,7 +616,7 @@ async function loadEager(doc) {
   var wrapper = document.createElement('div');
   wrapper.className = "full-row-white-components";
   var container = document.createElement('div');
-  container.className = "container";
+  container.classList.add("container", "content-grid");
   wrapper.appendChild(container).append(column1, column2);
   var datatarget = document.querySelectorAll('.primary-subnav-items')[0];
   datatarget.after(wrapper);
