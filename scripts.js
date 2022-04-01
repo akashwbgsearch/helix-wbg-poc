@@ -627,6 +627,7 @@ async function loadEager(doc) {
   let newsletter = document.createElement('div');
   newsletter.classList.add("validate", "input-group", "mySignUpFormDesktop");
   const form = document.createElement('form');
+  document.querySelectorAll('.column-1')[0].append(newsletter).append(form);
   let inputText = document.createElement('input');
   inputText.type = "text";
   inputText.id = "fields_email";
@@ -638,7 +639,7 @@ async function loadEager(doc) {
   // inputSubmit.setAttribute('placeholder', "Research & Operations/Accountability Matters");
   inputSubmit.classList.add("newsletter-submit", "btn-default", "btn-lg", "primary-dark-blue-btn");
   form.append(inputText, inputSubmit);
-  document.querySelectorAll('.column-1')[0].append(newsletter).append(form);
+  
 
 
   // const theme = getMetadata('theme');
