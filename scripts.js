@@ -611,13 +611,13 @@ async function loadEager(doc) {
   var target = document.querySelectorAll('.logo-wrapper')[0];
   target.after(parent2);
 
-  var columns = document.querySelectorAll('.columns')[0];
+  var column1 = document.querySelectorAll('.column-1')[0];
   var column2 = document.querySelectorAll('.column-2')[0];
   var wrapper = document.createElement('div');
   wrapper.className = "full-row-white-components";
   var container = document.createElement('div');
   container.className = "container";
-  wrapper.appendChild(container).append(columns, column2);
+  wrapper.appendChild(container).append(column1, column2);
   var datatarget = document.querySelectorAll('.primary-subnav-items')[0];
   datatarget.after(wrapper);
 
