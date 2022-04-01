@@ -628,6 +628,8 @@ async function loadEager(doc) {
   newsletter.className = "home-newsletter";
   const form = document.createElement('form');
   form.classList.add("validate", "input-group", "mySignUpFormDesktop");
+  form.action = "https://www.worldbank.org/en/newsletter-subscription?worldbankgroup=true";
+  form.method = "GET";
   newsletter.append(form);
   document.querySelectorAll('.column-1')[0].append(newsletter);
   let inputText = document.createElement('input');
