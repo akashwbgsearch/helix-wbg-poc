@@ -624,6 +624,22 @@ async function loadEager(doc) {
   var navContainer = document.querySelectorAll('.primary-subnav-items>div')[0];
   navContainer.className = "container";
 
+  let newsletter = document.createElement('div');
+  newsletter.classList.add("validate", "input-group", "mySignUpFormDesktop");
+  const form = document.createElement('form');
+  let inputText = document.createElement('input');
+  inputText.type = "text";
+  inputText.id = "fields_email";
+  inputText.setAttribute('placeholder', "Research & Operations/Accountability Matters");
+  inputText.className = "email-input-field-1";
+  let inputSubmit = document.createElement('input');
+  inputSubmit.type = "submit";
+  inputSubmit.id = "mc-embedded-subscribe";
+  // inputSubmit.setAttribute('placeholder', "Research & Operations/Accountability Matters");
+  inputSubmit.classList.add("newsletter-submit", "btn-default", "btn-lg", "primary-dark-blue-btn");
+  form.append(inputText, inputSubmit);
+  document.querySelectorAll('.column-1')[0].append(newsletter).append(form);
+
 
   // const theme = getMetadata('theme');
   // if (theme) document.body.classList.add(toClassName(theme));
