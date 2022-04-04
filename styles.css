@@ -127,3 +127,6 @@ main .column-1 img {
 .column-2 img {
     width: 100%;
 }
+.logo-wrapper .logo img {
+    padding: 15px 15px;
+}
