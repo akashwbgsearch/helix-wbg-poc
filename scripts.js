@@ -641,7 +641,6 @@ async function loadEager(doc) {
   let inputSubmit = document.createElement('input');
   inputSubmit.type = "submit";
   inputSubmit.id = "mc-embedded-subscribe";
-  // inputSubmit.setAttribute('placeholder', "Research & Operations/Accountability Matters");
   inputSubmit.classList.add("newsletter-submit", "btn-default", "btn-lg", "primary-dark-blue-btn");
   form.append(inputText, inputSubmit);
 
