@@ -666,6 +666,7 @@ async function loadLazy(doc) {
   // loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
+  loadCSS("https://www.worldbank.org/etc/designs/wbrrdesign/clientlibs-wbrredsign.css");
   addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.ico`);
 }
 
